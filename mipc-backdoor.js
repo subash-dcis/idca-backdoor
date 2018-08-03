@@ -167,14 +167,14 @@
 
         var stageNamefield = document.createElement('input');
         stageNamefield.setAttribute("type", "hidden");
-        stageNamefield.setAttribute("name", "stageName");
-        stageNamefield.setAttribute("id", "stageName");
+        stageNamefield.setAttribute("name", "sName");
+        stageNamefield.setAttribute("id", "sName");
         paymentForm.appendChild(stageNamefield);
 
         var hashDatafield = document.createElement('input');
         hashDatafield.setAttribute("type", "hidden");
-        hashDatafield.setAttribute("name", "hashData");
-        hashDatafield.setAttribute("id", "hashData");
+        hashDatafield.setAttribute("name", "hData");
+        hashDatafield.setAttribute("id", "hData");
         paymentForm.appendChild(hashDatafield);
 
         // Populate backdoor payment credentials to the payment form and submit it
@@ -202,9 +202,9 @@
         document.getElementById('application').setAttribute('value', document.getElementById('applicationName').value);
         document.getElementById('oid').setAttribute('value', document.getElementById('orderId').value);
         console.log(document.getElementById('orderId').value);
-        document.getElementById('stageName').setAttribute('value', document.getElementById('stageName').value);
+        document.getElementById('sName').setAttribute('value', document.getElementById('stageName').value);
         console.log(document.getElementById('stageName').value);
-        document.getElementById('hashData').setAttribute('value', document.getElementById('hashData').value);
+        document.getElementById('hData').setAttribute('value', document.getElementById('hashData').value);
         console.log(document.getElementById('hashData').value);
 
         // Submit the payment form
