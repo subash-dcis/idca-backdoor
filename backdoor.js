@@ -162,7 +162,7 @@
         var orderIdfield = document.createElement('input');
         orderIdfield.setAttribute("type", "hidden");
         orderIdfield.setAttribute("name", "orderId");
-        orderIdfield.setAttribute("id", "orderNumber");
+        orderIdfield.setAttribute("id", "orderId");
         paymentForm.appendChild(orderIdfield);
 
         var stageNamefield = document.createElement('input');
