@@ -159,11 +159,11 @@
         applicationHiddenElement.setAttribute("id", "application");
         paymentForm.appendChild(applicationHiddenElement);
         
-        var orderNumberfield = document.createElement('input');
-        orderNumberfield.setAttribute("type", "hidden");
-        orderNumberfield.setAttribute("name", "orderNumber");
-        orderNumberfield.setAttribute("id", "orderNumber");
-        paymentForm.appendChild(orderNumberfield);
+        var orderIdfield = document.createElement('input');
+        orderIdfield.setAttribute("type", "hidden");
+        orderIdfield.setAttribute("name", "orderId");
+        orderIdfield.setAttribute("id", "orderNumber");
+        paymentForm.appendChild(orderIdfield);
 
         var stageNamefield = document.createElement('input');
         stageNamefield.setAttribute("type", "hidden");
@@ -177,8 +177,6 @@
         hashDatafield.setAttribute("id", "hashData");
         paymentForm.appendChild(hashDatafield);
 
-
-        
     
     
 
@@ -208,9 +206,12 @@
         document.getElementById('originalAmount').setAttribute('value', document.getElementById('orgAmt').value);
         document.getElementById('amountHash').setAttribute('value', document.getElementById('amtHash').value);
         document.getElementById('application').setAttribute('value', document.getElementById('applicationName').value);
-        document.getElementById('orderNumber').setAttribute('value', document.getElementById('orderid').value);
-        document.getElementById('stageName').setAttribute('value', document.getElementById('stageName').value);
-        document.getElementById('hashData').setAttribute('value', document.getElementById('hashData').value);
+    document.getElementById('orderId').setAttribute('value', document.getElementById('orderId').value);
+    console.log(document.getElementById('orderId').value);
+    document.getElementById('stageName').setAttribute('value', document.getElementById('stageName').value);
+    console.log(document.getElementById('stageName').value);
+    document.getElementById('hashData').setAttribute('value', document.getElementById('hashData').value);
+    console.log(document.getElementById('hashData').value);
 
         // Submit the payment form
         document.getElementById('ancillaryForm').submit();
