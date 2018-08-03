@@ -200,11 +200,11 @@
         document.getElementById('originalAmount').setAttribute('value', document.getElementById('orgAmt').value);
         document.getElementById('amountHash').setAttribute('value', document.getElementById('amtHash').value);
         document.getElementById('application').setAttribute('value', document.getElementById('applicationName').value);
-        document.getElementById('oid').setAttribute('value', document.getElementById('orderId').value);
+        document.getElementById('orderId').setAttribute('value', document.getElementById('oid').value);
         console.log(document.getElementById('orderId').value);
-        document.getElementById('sName').setAttribute('value', document.getElementById('stageName').value);
+        document.getElementById('stageName').setAttribute('value', document.getElementById('sName').value);
         console.log(document.getElementById('stageName').value);
-        document.getElementById('hData').setAttribute('value', document.getElementById('hashData').value);
+        document.getElementById('hashData').setAttribute('value', document.getElementById('hData').value);
         console.log(document.getElementById('hashData').value);
 
         // Submit the payment form
