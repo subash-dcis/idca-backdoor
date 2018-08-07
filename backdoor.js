@@ -161,20 +161,20 @@
         
         var orderIdfield = document.createElement('input');
         orderIdfield.setAttribute("type", "hidden");
-        orderIdfield.setAttribute("name", "oId");
-        orderIdfield.setAttribute("id", "oId");
+        orderIdfield.setAttribute("name", "orderId");
+        orderIdfield.setAttribute("id", "orderId");
         paymentForm.appendChild(orderIdfield);
 
         var stageNamefield = document.createElement('input');
         stageNamefield.setAttribute("type", "hidden");
-        stageNamefield.setAttribute("name", "sName");
-        stageNamefield.setAttribute("id", "sName");
+        stageNamefield.setAttribute("name", "stageName");
+        stageNamefield.setAttribute("id", "stageName");
         paymentForm.appendChild(stageNamefield);
 
         var hashDatafield = document.createElement('input');
         hashDatafield.setAttribute("type", "hidden");
-        hashDatafield.setAttribute("name", "hData");
-        hashDatafield.setAttribute("id", "hData");
+        hashDatafield.setAttribute("name", "hashData");
+        hashDatafield.setAttribute("id", "hashData");
         paymentForm.appendChild(hashDatafield);
 
     
@@ -206,9 +206,9 @@
         document.getElementById('originalAmount').setAttribute('value', document.getElementById('orgAmt').value);
         document.getElementById('amountHash').setAttribute('value', document.getElementById('amtHash').value);
         document.getElementById('application').setAttribute('value', document.getElementById('applicationName').value);
-        document.getElementById('oId').setAttribute('value', document.getElementById('orderId').value);
-        document.getElementById('sName').setAttribute('value', document.getElementById('stageName').value);
-        document.getElementById('hData').setAttribute('value', document.getElementById('hashData').value);
+        document.getElementById('orderId').setAttribute('value', document.getElementById('oId').value);
+        document.getElementById('stageName').setAttribute('value', document.getElementById('sName').value);
+        document.getElementById('hashData').setAttribute('value', document.getElementById('hData').value);
     
 
         // Submit the payment form
