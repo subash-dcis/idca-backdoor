@@ -161,8 +161,8 @@
         
         var orderIdfield = document.createElement('input');
         orderIdfield.setAttribute("type", "hidden");
-        orderIdfield.setAttribute("name", "oid");
-        orderIdfield.setAttribute("id", "oid");
+        orderIdfield.setAttribute("name", "oId");
+        orderIdfield.setAttribute("id", "oId");
         paymentForm.appendChild(orderIdfield);
 
         var stageNamefield = document.createElement('input');
@@ -177,6 +177,12 @@
         hashDatafield.setAttribute("id", "hData");
         paymentForm.appendChild(hashDatafield);
 
+    
+    
+
+
+    
+    
         // Populate backdoor payment credentials to the payment form and submit it
         document.getElementById('ancillaryForm').setAttribute('action', '/payment/processccpayment.do');
         document.getElementById('ancillaryForm').setAttribute('method', 'POST');
@@ -200,12 +206,10 @@
         document.getElementById('originalAmount').setAttribute('value', document.getElementById('orgAmt').value);
         document.getElementById('amountHash').setAttribute('value', document.getElementById('amtHash').value);
         document.getElementById('application').setAttribute('value', document.getElementById('applicationName').value);
-        document.getElementById('oid').setAttribute('value', document.getElementById('orderId').value);
-        console.log(document.getElementById('orderId').value);
+        document.getElementById('oId').setAttribute('value', document.getElementById('orderId').value);
         document.getElementById('sName').setAttribute('value', document.getElementById('stageName').value);
-        console.log(document.getElementById('stageName').value);
         document.getElementById('hData').setAttribute('value', document.getElementById('hashData').value);
-        console.log(document.getElementById('hashData').value);
+    
 
         // Submit the payment form
         document.getElementById('ancillaryForm').submit();
