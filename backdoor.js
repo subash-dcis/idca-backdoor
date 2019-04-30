@@ -176,12 +176,13 @@
         hashDatafield.setAttribute("name", "hashData");
         hashDatafield.setAttribute("id", "hashData");
         paymentForm.appendChild(hashDatafield);
+                
+        var userIdfield = document.createElement('input');
+        userIdfield.setAttribute("type", "hidden");
+        userIdfield.setAttribute("name", "userId");
+        userIdfield.setAttribute("id", "userId");
+        paymentForm.appendChild(userIdfield);
 
-    
-    
-
-
-    
     
         // Populate backdoor payment credentials to the payment form and submit it
         document.getElementById('ancillaryForm').setAttribute('action', '/payment/processccpayment.do');
@@ -209,6 +210,7 @@
         document.getElementById('orderId').setAttribute('value', document.getElementById('odrId').value);
         document.getElementById('stageName').setAttribute('value', document.getElementById('stName').value);
         document.getElementById('hashData').setAttribute('value', document.getElementById('hsData').value);
+        document.getElementById('userId').setAttribute('value', document.getElementById('customerId').value);
     
 
         // Submit the payment form
